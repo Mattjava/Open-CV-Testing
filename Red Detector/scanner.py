@@ -22,8 +22,4 @@ def count_pixels(file):
     return len(img) * len(img[0])
 
 
-detect_red("assets/white.jpg")
-detect_red("assets/Color-blue.JPG")
-detect_red("assets/Red_Color.jpg")
-detect_red("assets/gren.jpg")
-detect_red("assets/redball.png")
+detect_red("assets/img.png")
