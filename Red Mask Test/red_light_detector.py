@@ -13,7 +13,7 @@ while True:
     low_red = np.array([0, 100, 20])
     high_red = np.array([5, 255, 255])
 
-    red_mask = cv2.inRange(hsv, low_red1, high_red1)
+    red_mask = cv2.inRange(hsv, low_red, high_red)
     red_filter_camera = cv2.bitwise_and(frame, frame, mask=red_mask)
 
     cv2.imshow('Result', red_filter_camera)
