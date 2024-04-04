@@ -10,7 +10,7 @@ while True:
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
 
 
-    low_red = np.array([0, 100, 20])
+    low_red = np.array([0, 200, 20])
     high_red = np.array([5, 255, 255])
 
     red_mask = cv2.inRange(hsv, low_red, high_red)
